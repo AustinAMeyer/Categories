@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSArray+Movies.h"
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
+    
+    NSArray *rawArray = @[@"Gravity", @"The Martian", @"Intersteller", @"The Martian", @"Gravity", @"Gaurdians of the Galaxy"];
+    
+    rawArray = [rawArray deduped];
+    
+    
     return 0;
 }
